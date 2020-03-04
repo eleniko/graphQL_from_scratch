@@ -41,9 +41,9 @@ Resolve the books field with custom resolver, search for books filter the book a
 For instance for a single book the type would be Book type instead of list of book types, and we would get it based on the argument that we pass to resolve method(resolve method receives two parameters: parents and args)
 In order to define what args are valid identify the args object, with id property which will have graphql int type 
 Use that id parameter in order to find books, compare if the book id equals to args id 
-Define a query to get a single author with the same way as for authors
-Pass the schema mutation as a parameter with a type of root mutation type
-Create a root mutation type similarly to query mutation type
+16) Define a query to get a single author with the same way as for authors
+17)Pass the schema mutation as a parameter with a type of root mutation type
+18) Create a root mutation type similarly to query mutation type
 Define the root mutation type which is going to be graphql object type
 Pass to it name as a parameter
 Give the value to the name as a ‘’Mutation”
@@ -56,9 +56,9 @@ Create a book constant inside the resolver and define fields for it
 It will have field id , which type would be books.lengt+1 (in the case of database relation it would be generated automatically) name: which would be type of args.name,
 And author id as args.authorId
 Add that newly created book into books array with push operation and return that book
-Create new mutation for adding the author similar to adding the book
+19) Create new mutation for adding the author similar to adding the book
 
-     Data that will be used for Book and Author representation :
+# Data that will be used for Book and Author representation :
 
 const authors = [
 	{ id: 1, name: 'E. Hemingway' },
